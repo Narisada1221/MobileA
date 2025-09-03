@@ -1,5 +1,6 @@
 package jp.ac.meijou.android.s241205134;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -28,5 +29,19 @@ public class MainActivity4 extends AppCompatActivity {
 
         var editText = getIntent().getStringExtra("title");
         binding.textView4.setText(editText);
+
+        //OK
+        binding.button11.setOnClickListener(v ->{
+            var intent = new Intent();
+            intent.putExtra("ret","OK");
+            setResult(RESULT_OK,intent);
+            finish();
+        });
+
+        //Cancel
+        binding.button12.setOnClickListener(v ->{
+            setResult(RESULT_CANCELED);
+            finish();
+        });
     }
 }
