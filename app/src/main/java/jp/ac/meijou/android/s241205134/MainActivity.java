@@ -1,5 +1,6 @@
 package jp.ac.meijou.android.s241205134;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             var text = binding.editTextText.getText().toString();
             binding.text.setText(text);
         });
+
     }
 
     @Override
