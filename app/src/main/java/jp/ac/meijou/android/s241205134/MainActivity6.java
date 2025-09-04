@@ -27,6 +27,7 @@ public class MainActivity6 extends AppCompatActivity {
     private final OkHttpClient okHttpClient = new OkHttpClient();
 
     private ActivityMain6Binding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
